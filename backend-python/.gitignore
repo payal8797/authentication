@@ -1,0 +1,81 @@
+# --- Python basics ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.pyo
+*.so
+
+# --- Packaging / build artifacts ---
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+sdist/
+wheels/
+*.egg-info/
+*.egg
+MANIFEST
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+.python-version  # pyenv
+
+# --- Tests / coverage ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+pytestdebug.log
+
+# --- Linters / type checkers ---
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# --- Logs & runtime ---
+logs/
+*.log
+uvicorn.log
+
+# --- Local settings / secrets ---
+.env
+.env.*
+!.env.example
+.secrets/
+*.pem
+*.key
+
+# --- Databases / local data ---
+*.db
+*.sqlite
+*.sqlite3
+instance/
+media/
+uploads/
+
+# --- Alembic / migrations caches (keep migration files) ---
+alembic/*/__pycache__/
+migrations/*/__pycache__/
+
+# --- IDE / OS noise ---
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+
+# --- PDM / local caches ---
+__pypackages__/
+.cache/
