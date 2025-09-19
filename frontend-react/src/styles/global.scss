@@ -1,0 +1,43 @@
+// Global color variables
+$primary-color: #1f4efe;
+$bg-color: #f0f2f5;
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: $bg-color;
+}
+
+// Auth container
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+// Card override
+.ant-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ant-card-head-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $primary-color;
+  text-align: center;
+}
+
+.ant-form-item {
+  margin-bottom: 18px;
+}
+
+.ant-btn-primary {
+  background-color: $primary-color;
+  border: none;
+
+  &:hover {
+    background-color: darken($primary-color, 5%);
+  }
+}
